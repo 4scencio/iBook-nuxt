@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="box">
     <h1>Página Inicial :)</h1>
   </div>
 </template>
@@ -21,7 +21,13 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: color('dark', 'darkest');
+}
 
 .index {
   margin: 0 auto;
