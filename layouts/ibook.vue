@@ -2,11 +2,16 @@
     <div class="ibook-layout">
         <!-- Header -->
         <Header />
+
         <!-- Container -->
+
         <Container>
             <Nuxt />
         </Container>
+        
         <!-- Footer -->
+
+        <Footer />
     </div>
 </template>
 

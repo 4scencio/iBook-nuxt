@@ -1,18 +1,20 @@
 <template>
     <header class="header">
-        <mav>
+        <nav>
             <ul class="items">
                 <li class="item">
-                    <NuxtLink to="/"></NuxtLink>
+                    <NuxtLink to="/">
+                      <LogoiBook />
+                    </NuxtLink>
                 </li>
                 <li class="item">
-                    <NuxtLink to="/"></NuxtLink>
+                    <NuxtLink to="/">Home</NuxtLink>
                 </li>
                 <li class="item">
-                    <NuxtLink to="/"></NuxtLink>
+                    <NuxtLink to="/about">Sobre</NuxtLink>
                 </li>
             </ul>
-        </mav>
+        </nav>
     </header>
 </template>
 
