@@ -1,9 +1,5 @@
 <template>
-  <!-- <HomeTemplate /> -->
-  <div class="count">
-    <h1> {{ $count }}</h1>
-    <h2 @click="increment()">Incrementar</h2>
-  </div>
+  <HomeTemplate />
 </template>
 
 <script lang="ts">
