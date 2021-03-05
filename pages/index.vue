@@ -8,20 +8,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { books } from '@/store'
 
 export default Vue.extend({
   layout: 'ibook',
-  computed: {
-    $count() {
-      return books.$count
-    }
-  },
-  methods: {
-    increment() {
-      books.increment()
-    }
-  }
 })
 </script>
 
