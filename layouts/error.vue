@@ -42,6 +42,9 @@ button {
   background-color: #f7f7f7;
   padding: 10px;
   transition: all 1s ease;
+  &:hover {
+      transform: scale(1.05);
+    }
 }
 
 a {
@@ -49,8 +52,5 @@ a {
   text-decoration: none;
   color: #292929;
   font-weight: bold;
-}
-
-button:hover {
 }
 </style>
