@@ -1,5 +1,5 @@
 <template>
-  <form class="login-form">
+  <form class="login-form" @submit.prevent="login">
     <h1>Acesse sua conta:</h1>
     <input v-model="form.email" type="email" placeholder="Digite seu e-mail" />
     <input
@@ -14,6 +14,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { auth } from '@/store' 
+
 
 export default Vue.extend({
   data() {
@@ -21,6 +23,16 @@ export default Vue.extend({
       form: {
         email: '',
         password: ''
+      }
+    }
+  },
+  methods: {
+    async login() {
+      console.log(this.form.email, this.form.password)
+      try {
+        await auth.create({email: this.form.email, password: this.form.password})
+      } catch(error) {
+        console.log(error)
       }
     }
   }

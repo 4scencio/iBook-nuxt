@@ -2,12 +2,18 @@ import { Store } from 'vuex'
 import { getModule } from 'vuex-module-decorators'
 
 import Books from '@/store/books'
+import Auth from '@/store/auth'
 
 /* eslint-disable import/no-mutable-exports */
 let books: Books
+let auth: Auth
 
 const initializeStores = (store: Store<any>): void => {
   books = getModule(Books, store)
 }
 
-export { initializeStores, books }
+const initializeAuth = (store: Store<any>): void => {
+  auth = getModule(Auth, store)
+}
+
+export { initializeStores, books, auth }
